@@ -1,0 +1,31 @@
+# General configurations
+gpu: 0
+seed: 0
+
+# Path configurations
+dataset_path: '/home/tin3080/KHUONG/SJU_Study/specialTopics_class/digitClassification/dataset'
+log_path: 'log'
+model_path: '/home/tin3080/KHUONG/SJU_Study/specialTopics_class/test/models'
+config_path: '/home/tin3080/KHUONG/SJU_Study/specialTopics_class/test/config'
+dataset_name: 'MNIST'
+arch: 'NN'
+model_name: 'NN'
+config_file: 'NN.yaml'
+title: 'Back-propagation Network'
+# Train configurations
+num_workers: 4
+optim: 'Adam'  # ['SGD', 'Adam', 'AdamW']
+scheduler: 'StepLR'  # ['StepLR', 'Cosine']
+lr: 0.001
+weight_decay: 0.0001
+num_epochs: 20
+step_size: 15
+train_batch_size: 64
+test_batch_size: 64
+print_freq: 50
+save_freq: 1
+
+# Network configurations
+NN:
+  num_classes: 10
+  fc_dims: [784, 256, 128]
