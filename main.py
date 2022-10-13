@@ -159,32 +159,8 @@ if __name__ == '__main__':
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.suptitle(cfg.title)
-    # plt.suptitle('Convolutional Neural Network')
     plt.tight_layout()
     plt.grid()
     plt.legend()
     plt.show()
-
-    
-    # fig=plt.figure()
-    # idx=1
-    # ax=fig.add_subplot(1,1,idx)
-    # ax.plot(accuracy_keeper['train'],label="Training Accuracy")
-    # ax.plot(accuracy_keeper['valid'],label="Training Accuracy")
-    # # ax.plot(loss_keeper['train'],label="Training loss")
-    # # ax.plot(loss_keeper['valid'],label="Valid loss")
-    # # ax.plot(m1_loss['valid'],label="Validation Loss")
-    # ax.set_title('MNIST-Digits')
-
-    # # # fig2=plt.figure(2)
-    # # # idx=1
-    # # # ax=fig2.add_subplot(1,1,idx)
-    # # # ax.plot(accuracy_keeper['train'],label="Training Accuracy")
-    # # # ax.plot(accuracy_keeper['valid'],label="Training Accuracy")
-    # # ax[1,2,2].plot(loss_keeper['train'],label="Training loss")
-    # # ax[1,2,2].plot(loss_keeper['valid'],label="Valid loss")
-    # # # ax.plot(m1_loss['valid'],label="Validation Loss")
-    # # ax.set_title('Loss')
-    # plt.legend()
-    # plt.show()
     
